@@ -11,7 +11,7 @@ public class RSAAlgorithm {
 
     static int pow(int x, int y, int n) {
         int k = 1;
-        for (int j = 1; j <= y; j++)
+        for (int j = 0; j < y; j++)
             k = (k * x) % n;
         return k;
     }
